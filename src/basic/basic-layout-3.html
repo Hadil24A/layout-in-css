@@ -6,8 +6,49 @@
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
-    </style>
+}
+:root {
+  font-size: min(calc(1em + 1vw), 4em);
+}
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows:4fr 1fr 1fr ;
+  grid-template-areas:"header header" "nav nav" "footer main" ;
+
+}
+body > * {
+  min-height: 1em;
+}
+header {
+  background: cyan;
+  grid-column-start: 2;
+  grid-area: header;
+  
+}
+header > h1 {
+  margin: 0;
+}
+
+nav {
+  background: magenta;
+  grid-column-start: 1;
+  grid-area: nav;
+}
+main {
+  background: yellow;
+  grid-area: main;
+
+}
+footer {
+  background: black;
+  color: white;
+  grid-column-start: 2;
+  grid-area: footer;
+}    </style>
   </head>
   <body id="basic-layout-3">
     <header><h1>Basic Layout 3</h1></header>
