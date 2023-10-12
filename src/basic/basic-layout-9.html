@@ -6,9 +6,11 @@
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-root {
+      
+:root {
   font-size: min(calc(1em + 1vw), 4em);
 }
+
 body {
   min-height: 100vh;
   font-family: sans-serif;
@@ -16,11 +18,12 @@ body {
   grid-gap: 0px;
   grid-template-columns:repeat(20, 1fr); 
   grid-template-rows: repeat(20, 1fr) ;
-
 }
+
 body > * {
   min-height: 1em;
 }
+
 header {
  background: yellow;
   border-radius: 50%;
@@ -30,6 +33,7 @@ header {
   grid-column-start: 1;
   grid-column-end: 2;
 }
+
 header > h1 {
   margin: 0;
 }
@@ -42,8 +46,8 @@ nav {
   grid-row-end: 5;
   grid-column-start: 4;
   grid-column-end: 5;
-
 }
+
 main {
    background: cyan;
   border-radius: 50%;
@@ -52,10 +56,8 @@ main {
   grid-row-end: 10;
   grid-column-start:1 ;
   grid-column-end: 5;
-  
-
-
 }
+
 footer {
   background: black;
   color: white;

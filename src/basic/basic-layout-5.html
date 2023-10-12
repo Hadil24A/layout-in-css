@@ -10,6 +10,7 @@
 :root {
   font-size: min(calc(1em + 1vw), 4em);
 }
+
 body {
   min-height: 100vh;
   font-family: sans-serif;
@@ -18,17 +19,18 @@ body {
   grid-template-columns: 1fr 1fr 1fr ;
   grid-template-rows:0.5fr 2fr ;
   grid-template-areas:"footer footer footer" "nav main header" "nav main header" ;
-
 }
+
 body > * {
   min-height: 1em;
 }
+
 header {
   background: cyan;
   grid-column-start: 2;
   grid-area: header;
-  
 }
+
 header > h1 {
   margin: 0;
 }
@@ -38,6 +40,7 @@ nav {
   grid-column-start: 1;
   grid-area: nav;
 }
+
 main {
   background: yellow;
   grid-area: main;
@@ -48,7 +51,9 @@ footer {
   color: white;
   grid-column-start: 2;
   grid-area: footer;
-}    </style>
+}   
+
+</style>
   </head>
   <body id="basic-layout-5">
     <header><h1>Basic Layout 5</h1></header>
